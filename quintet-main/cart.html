@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart || Quintet</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <div class="logo">
+          <a href="index.html">
+            <img src="./images/Screenshot_2023-07-01_115323-removebg-preview.png" alt="" width="125px"
+          /></a>
+        </div>
+        <nav>
+          <ul id="MenuItems">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Help Centre</a></li>
+            <li><a href="account.html">Account</a></li>
+            <!-- TODo: 22:20 -->
+          </ul>
+        </nav>
+        <a href="cart.html"
+          ><img src="https://i.ibb.co/PNjjx3y/cart.png" alt="" width="30px" height="30px"
+        /></a>
+        <img
+          src="https://i.ibb.co/6XbqwjD/menu.png"
+          alt=""
+          class="menu-icon"
+          onclick="menutoggle()"
+        />
+      </div>
+    </div>
+
+    <!-- Cart Items Details -->
+    <div class="small-container cart-page">
+      <table>
+        <tr>
+          <th>Product</th>
+          <th>Quantity</th>
+          <th>Subtotal</th>
+        </tr>
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/11r.jpg" alt="" />
+              <div>
+                <p>OnePlus 11R 5G - Sonic Black</p>
+                <small>Price: ₹45,999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="nunber" value="1" /></td>
+          <td>45,999</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/ideapad.jpg" alt="" />
+              <div>
+                <p>Lenovo Ideapad Slim 5 - 16/512</p>
+                <small>Price: ₹65,999</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="nunber" value="1" /></td>
+          <td>65,999</td>
+        </tr>
+
+        <tr>
+          <td>
+            <div class="cart-info">
+              <img src="./images/skybags.jpeg" alt="" />
+              <div>
+                <p>Skybags Backpack -24L</p>
+                <small>Price: ₹1,499</small>
+                <br />
+                <a href="">Remove</a>
+              </div>
+            </div>
+          </td>
+          <td><input type="nunber" value="1" /></td>
+          <td> 1,499</td>
+        </tr>
+      </table>
+
+      <div class="total-price">
+        <table>
+          <tr>
+            <td>Total</td>
+            <td>₹1,13,497.00</td>
+          </tr>
+          <tr>
+            <td><a href="#" rel="noopener noreferrer" class="btn">Make Payment &#8594;</a></td>
+           
+          </tr>
+        
+        </table>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>
+              Download App for Android <br />
+              and ios mobile phone
+            </p>
+            <div class="app-logo">
+              <img src="images/play-store.png" alt="" />
+              <img src="images/app-store.png" alt="" />
+            </div>
+          </div>
+          <div class="footer-col-2">
+            <img src="images/Screenshot_2023-07-01_114826-removebg.png" alt="" />
+            <p>
+                Donde la comodidad se encuentra con la <br>
+                perfección
+            </p>
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li>Coupons</li>
+              <li>Blog Post</li>
+              <li>Return Policy</li>
+              <li>Join Affiliate</li>
+            </ul>
+          </div>
+
+          <div class="footer-col-4">
+            <h3>Follow us</h3>
+            <ul>
+              <li>Facebook</li>
+              <li>Twitter</li>
+              <li>Instagram</li>
+              <li>YouTube</li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+        <p class="copyright">Copyright 2023 - QUINTET</p>
+      </div>
+    </div>
+    <!-- JS for Toggle menu -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+
+      MenuItems.style.maxHeight = "0px";
+
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
